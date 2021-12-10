@@ -23,7 +23,7 @@ class App(tk.Tk):
         self.winfo_toplevel().title("Currency Converter Project")
 
         self.geometry("1000x700")
-        
+
         self.title = Label(self, text = 'Currency Convertor Machine', bg = "pink", pady = 10, padx = 10)
         self.title.config(font = ('Times New Roman',16,'bold'))
         self.subTitle = Label(self, text = f"Rates from {self.converter.data['date']}")

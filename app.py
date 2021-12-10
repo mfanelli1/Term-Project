@@ -8,32 +8,30 @@ import ctypes
 
 app = Flask(__name__)
 
-currencies = data["rates"]
 
-
-@app.route('/', methods=['GET', 'POST'])
+# @app.route('/', methods=['GET', 'POST'])
 def home():
     if request.method == 'POST':
         try:
             amount = request.form['amount']
             amount = float(amount)
-            from_c = request.form['from_c']
-            to_c = request.form['to_c']
+            from_box = request.form['from_c']
+            to_box = request.form['to_c']
 
             data = requests.get('https://api.exchangerate-api.com/v4/latest/USD').json()
             currencies = data["rates"]
 
-            rate = float(rate)
+            rate = float("rates")
             result = rate * amount
 
             return render_template('home.html', result=round(result, 2), amount=amount,
-                                   from_c_code=from_c_code, from_c_name=from_c_name,
-                                   to_c_code=to_c_code, to_c_name=to_c_name, time=time)
+                                   from_box=from_box, from_box = from_box, 
+                                   to_box=to_box, to_box=to_box)
         except Exception as e:
             return '<h1>Bad Request : {}</h1>'.format(e)
   
     else:
-        return render_template('home.html')
+        return render_template('currency.html')
   
   
 if __name__ == "__main__":

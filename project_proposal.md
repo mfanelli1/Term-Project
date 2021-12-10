@@ -13,7 +13,6 @@ Mark Fanelli And Ziyuan Zhu
 * Mark:  My personal goal for this project is to further learn how to write Python code in an efficient manner as well as gaining more experience in using a coding language to solve problems, which can be very valuable in the long run.
 * Shared goal: We want to learn how to work on a coding project in a team setting and learn how to share and collaborate. 
 
-
 ## **Implementation Plan**
 * So far, our plan is to import a json file of all the currencies and its rates. After completing the coding, we will import flask in order to enable the user interaction. 
 
