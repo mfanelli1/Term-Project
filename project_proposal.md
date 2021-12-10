@@ -4,9 +4,9 @@ Mark Fanelli And Ziyuan Zhu
 ## **Big Idea**
 * Our project is created to help convert currency from around the world with each other real time. We figured that this was interesting and applicable to Babson students because we are all from different parts of the world, thus, we use different forms of currencies in our home countries. 
 
-Our minimum viable product is to create a website that requires user input of whatever amount they want and be able to convert the output of another currency amount with a click of a button. 
+* Our minimum viable product is to create a website that requires user input of whatever amount they want and be able to convert the output of another currency amount with a click of a button. 
 
-Our stretch goal is to potentially showcase the historical rates of each form of currency with the final result.
+* Our stretch goal is to potentially showcase the historical rates of each form of currency with the final result.
 
 ## **Learning Goals**
 * Ziyuan: One of my learning goals is to gain a deeper understanding of the real life applications of Python, specifically in web application and internet development, and learning how to collaborate in such an intense project. 
