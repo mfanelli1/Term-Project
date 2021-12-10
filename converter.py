@@ -4,6 +4,7 @@ from tkinter import ttk
 import requests
 import ctypes
 
+
 class CurrencyConverter():
     def __init__(self, url):
             self.data = requests.get(url).json()
@@ -38,17 +39,17 @@ class App(tk.Tk):
         							  state = 'readonly', width = 15, justify = tk.CENTER)
 
         #input and result boxes
-        self.inputBox = Entry(self, justify = tk.CENTER, relief = FLAT, width = 15)
-        self.resultBox = Label(self, justify = tk.CENTER, bg = 'white', width = 15)
+        self.inputBox = Entry(self, justify = tk.CENTER, relief = FLAT, width = 16)
+        self.resultBox = Label(self, justify = tk.CENTER, bg = 'white', width = 16) #not sure why input box and result box is not the same
 
         #convert button
         self.button = Button(self, text = "convert", fg = "pink", bg = "black", 
-        					 activebackground = "lightblue", relief = FLAT, 
+        					 activebackground = "yellow", relief = FLAT, 
         					 command = self.convert) 
         self.button.config(font=('Times New Roman', 12, 'italic'))
 
         #centering title and subTitle 
-        self.title.place(relx = 0.5, rely = .2, y = -40, anchor = N)
+        self.title.place(relx = 0.5, rely = .2, y = -50, anchor = N)
         self.subTitle.place(relx = 0.5, rely= .2, anchor = N)
 
         #placement of these widgets are relative to the subTitle
@@ -76,7 +77,6 @@ class App(tk.Tk):
 
 if __name__ == '__main__':
     url = 'https://api.exchangerate-api.com/v4/latest/USD'
-
     App(CurrencyConverter(url))
     mainloop()
 
