@@ -1,15 +1,10 @@
-"""
-converter
-"""
-
 from flask import Flask, request, render_template, redirect, url_for, session
 import requests
 import ctypes
 
 app = Flask(__name__)
 
-
-# @app.route('/', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def home():
     if request.method == 'POST':
         try:

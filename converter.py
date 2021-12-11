@@ -49,7 +49,7 @@ class App(tk.Tk):
         self.button.config(font=('Times New Roman', 12, 'italic'))
 
         #centering title and subTitle 
-        self.title.place(relx = 0.5, rely = .2, y = -50, anchor = N)
+        self.title.place(relx = 0.5, rely = .2, y = -40, anchor = N)
         self.subTitle.place(relx = 0.5, rely= .2, anchor = N)
 
         #placement of these widgets are relative to the subTitle
